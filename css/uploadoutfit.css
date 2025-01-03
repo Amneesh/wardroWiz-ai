@@ -1,0 +1,347 @@
+.mainPageOutfit{
+  /* background: url('/resources/images/backgroundImages/LoginBg.jpg');
+  background-size: cover; */
+}
+#uploadingImages
+{
+
+  /* background-size: cover; */
+  padding-top: 10rem;
+    main {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  h1{
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    /* color: var(--colorBeige); */
+  }
+  
+  
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  canvas {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  article .body {
+  
+  background: transparent;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 250px;
+  
+  
+  }
+  .body{
+    padding: 2rem;
+  }
+  
+  .tabs {
+    display: flex;
+    background-color: var(--colorNavyBlue);
+    
+    border-radius: 5rem;
+  }
+  
+  #camera,
+  #gallery {
+    color: var(--colorBeige);;
+    padding:1.5rem 3rem;
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+  
+    border-radius: 5rem;
+  
+    text-transform: uppercase;
+  }
+  
+  #camera.active {
+    background-color: #CB874E;
+    transition: 0.3s ease-in-out;
+  
+  }
+  
+  #gallery.active {
+    background-color: #CB874E;
+    transition: 0.3s ease-in-out;
+  
+  }
+  
+  
+  
+  #imagePreview {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0rem 2rem 1rem 2rem;
+    margin: 0 auto;
+    width: 600px;
+    height: auto;
+    align-self: center;
+    img{
+      background-color: #fbf8f0;
+            backdrop-filter: blur(29px);
+            border-radius: 25% 1% 25% 1%;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+     
+    }
+  }
+  
+  .outfitButtons {
+    text-align: center;
+  }
+  
+  
+  
+  
+
+  
+  .cameraContent {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+  
+    #video {
+      grid-column: 1/-1;
+      grid-row: 1/-1;
+  
+    }
+  
+    #take-picture-button {
+      text-transform: uppercase;
+      width: 30%;
+      margin: 0 auto;
+      z-index: 1;
+      grid-column: 1/-1;
+      grid-row: 4;
+      padding: 1rem;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      border: none;
+      color: black;
+      background-color:#CB874E;
+    }
+  }
+  
+  #cameraFile {
+    text-align: center;
+  }
+ 
+  
+  #garmentTags {
+  
+    display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  .customCheckbox{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+
+    label{
+      text-transform: capitalize;
+    }
+  }
+  label{
+    text-align: left;
+    align-self: center;
+    font-size: 1.4rem;
+  
+  }
+    input[type="checkbox"] {
+      align-self: center;
+      width: 20px;
+      height: 20px;
+    }
+  
+    
+  }
+  #upload-form{
+    padding: 4rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .outfitButtons{
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+  }
+
+  #formDetails{
+    padding: 0rem 0rem 10rem 0rem; 
+
+  }
+  @media only screen and (min-width:800px){
+    #formDetails{
+      padding: 4rem 0rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  
+      form{
+       align-self: center; 
+      }
+  
+    }
+    .cameraContent {
+      width: 50%;
+      margin: 0 auto;
+    }
+  
+    
+  }
+  
+  
+  
+  .form-container {
+  
+  margin: 0 auto;
+    width: 600px;
+    /* background: linear-gradient(#ffffff00, #9e999900) padding-box, linear-gradient(145deg, #000000 35%, #06025e, #06025e) border-box;    */
+    border: 2px solid var(--colorBeige);
+    padding: 32px 24px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    background: var(--colorBeige);
+    backdrop-filter: blur(250px);
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .form-group {
+  .group{
+    text-align: left;
+            display: grid;
+            grid-template-columns: 250px 1fr;
+    align-self: center;
+    padding: 1rem 0rem;
+  
+  }
+  
+ h2 {
+  color: var(--colorNavyBlue);
+  text-align: left;
+ }
+  
+    select {
+      background-color: transparent;
+      color: var(--colorNavyBlue);
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+      font-size: 1.4rem;
+    }
+  
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    /* display: flex;
+    flex-direction: column; */
+    gap: 2px;
+  }
+  
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--colorNavyBlue);
+    font-size: 1.6rem;
+  }
+  
+  input[type="color"] {
+ width: 230px;
+  }
+  #occasionInput{
+    background: transparent;
+    width: 100%;
+    font-size: 1.3rem;
+color: var(--colorNavyBlue);
+padding: 0 1rem;
+border: none;
+border-radius: 1rem !important;
+border: 1px solid #ccc;
+  }
+  .form-container .form-group input[type="text"] {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: var(--colorBeige);
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+}

@@ -1,0 +1,16 @@
+{
+    "firebase": {
+        "apiKey": "AIzaSyBxkMWakgmz97Ulk79whfqSQcA-Q2uXQDA",
+        "authDomain": "integrated-project1.firebaseapp.com",
+        "projectId": "integrated-project1",
+        "storageBucket": "integrated-project1.appspot.com",
+        "messagingSenderId": "168333709827",
+        "appId": "1:168333709827:web:eb9a1c473b1af653aeb436",
+        "measurementId": "G-MSNKDYWBK4"
+    },
+    "rmbgURL" : "https://us-central1-integrated-project1.cloudfunctions.net/rmbg/upload",
+    "colormatchURL" : "https://colormatch-62ct2fngha-uc.a.run.app/colorMatch",
+    "deepTagingURL" : "https://cloudapi.lykdat.com/v1/detection/tags",
+    "deepTagAPIKey" : "ef96476e1df8176576aaf673e5d5ce12e77ba7ad2fef2a6c3fde14d391a20091",
+    "virtualTryOnAPI" : "https://us-central1-integrated-project1.cloudfunctions.net/virtualtryon/virtualOutfit"
+}

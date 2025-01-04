@@ -21,8 +21,8 @@ export const init = async () => {
 
   loadFavouritesData().then((favoriteArray) => {
     console.log(favoriteArray);
-    top_favorite_outfit.innerHTML = `<img src='${favoriteArray[0].top.imageUrl}' alt=''>`;
-    bottom_favorite_outfit.innerHTML = `<img src='${favoriteArray[0].bottom.imageUrl}' alt=''>`;
+    top_favorite_outfit.innerHTML = `<img src='${favoriteArray[0]?.top.imageUrl}' alt=''>`;
+    bottom_favorite_outfit.innerHTML = `<img src='${favoriteArray[0]?.bottom.imageUrl}' alt=''>`;
     
     likeFav.innerHTML += `<div class="con-like">
     <input class="like" type="checkbox" checked title="like">

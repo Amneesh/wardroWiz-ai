@@ -22,14 +22,14 @@ const firebaseConfig = {
     measurementId: "G-MSNKDYWBK4"
 };
 const firebase = initializeApp(firebaseConfig);
-const database = getDatabase(firebase);
+// const database = getDatabase(firebase);
 const auth = getAuth(firebase);
 auth.languagecode = 'en';
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const user = auth.currentUser;
-const storage = getStorage();
-console.log(auth);
+// const app = initializeApp(firebaseConfig);
+const db = getFirestore(firebase);
+// const user = auth.currentUser;
+// const storage = getStorage();
+//console.log(auth);
 //console.log(auth) 
 
 export const init = () => {

@@ -11,25 +11,17 @@ import { getDatabase } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase
 import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
 import { getFirestore, collection, doc, addDoc, setDoc, getDocs } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
 import { getStorage, ref, uploadBytes, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-storage.js";
+import config from '../resources/config.json' with { type: 'json' };
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBxkMWakgmz97Ulk79whfqSQcA-Q2uXQDA",
-    authDomain: "integrated-project1.firebaseapp.com",
-    projectId: "integrated-project1",
-    storageBucket: "integrated-project1.appspot.com",
-    messagingSenderId: "168333709827",
-    appId: "1:168333709827:web:eb9a1c473b1af653aeb436",
-    measurementId: "G-MSNKDYWBK4"
-};
-const firebase = initializeApp(firebaseConfig);
-const database = getDatabase(firebase);
+const firebase = initializeApp(config.firebase);
+// const database = getDatabase(firebase);
 const auth = getAuth(firebase);
 auth.languagecode = 'en';
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const user = auth.currentUser;
-const storage = getStorage();
-console.log(auth);
+// const app = initializeApp(firebaseConfig);
+const db = getFirestore(firebase);
+// const user = auth.currentUser;
+// const storage = getStorage();
+//console.log(auth);
 //console.log(auth) 
 
 export const init = () => {
